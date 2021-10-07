@@ -6,3 +6,4 @@ alert("Concluido com sucesso")
 document.writeln("<h2>Personagem</h2>");
 document.writeln("<b>Nome:</b> " + nome);
 
+
