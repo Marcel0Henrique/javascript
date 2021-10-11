@@ -9,7 +9,16 @@
         var altura = prompt("Digite sua altura(CM): ");
         var sexo = prompt("Digite seu sexo(M ou F): ");
 
-        
+        var imc;
+
+        if (sexo == "M") {
+            imc = (72.7 * altura) - 58;
+        }else{
+            imc = (62.1 * altura) - 44.7;
+        }
+
+        console.log("IMC ideal: " + imc);
+
     </script>
 </head>
 <body>
