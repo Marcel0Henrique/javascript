@@ -5,10 +5,11 @@ var imc = document.getElementById('imc');
 
 console.log("altura: " + altura);
 
-function imc() {
+function CalcularImc() {
 
     if (sexo == 'masculino') {
-        var result = (72.7 * altura.valueAsnumber) - 58;
+        var result = (72.7 * altura) - 58;
+        alert(result);
     }
 
     else if (sexo == 'feminino') {
