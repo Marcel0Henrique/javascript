@@ -15,19 +15,24 @@
         ● para mulheres: (62.1 * h) – 44.7.
     -->
     
-    <form >
-        <label for="">Sexo: </label>
-        <input type="text" name="sexo" id="sexo" placeholder="Digite seu sexo..">
-        <br>
-        <br>
-        <label for="">Altura: </label>
-        <input type="number" name="altura" id="altura" placeholder="Digite sua altura...">
-        <br>
-        <br>
-        <button onclick="CalcularImc()">Calcular</button>    
-    </form>
+    <label>Sexo: </label>
+    <input type="text" name="sex" id="sexo" placeholder="Masculino ou Feminino">
+    <br>
 
-    <p>Seu IMC é : <span id="imc"> </span></p>
+    <br>
+
+    <label>Altura: </label>
+    <input type="number" name="altura" id="altura" placeholder="Digite sua altura...">
+    <br>
+
+    <br>
+
+    <button onclick="">Calcular</button>
+
+    <p>Seu IMC: <span id="imcResultado"></span></p>
+
+
+
 
     <script src="js/imc.js"></script>
 </body>
