@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio - 6</title>
+</head>
+<body>
+    <h1>Exercicio - 6</h1>
+
+    <!-- 
+        O IMC – Índice de Massa Corporal é um critério da Organização Mundial de Saúde para
+        dar uma indicação sobre a condição de peso de uma pessoa adulta. A fórmula é IMC =
+        peso / ( altura*altura ) Elabore um algoritmo que leia o peso e a altura de um adulto e
+        mostre sua condição de acordo com a tabela abaixo. IMC em adultos Condição
+        ● Abaixo de 18,5 Abaixo do peso
+        ● Entre 18,5 e 25 Peso normal
+        ● Entre 25 e 30 Acima do peso
+        ● Acima de 30 obeso
+    -->
+
+    <label for="">Peso: </label>
+    <input type="number" name="peso" id="peso">
+    <br>
+    <br>
+    <label for="">Altura: </label>
+    <input type="number" name="altura" id="altura">
+    <br>
+
+    <br>
+
+    <button onclick="calcularImc()">Calcular</button>
+
+    <p id="imc"> </p>
+
+    <script src="js/06.js"></script>
+</body>
+</html>
