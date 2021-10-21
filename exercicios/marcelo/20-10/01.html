@@ -7,15 +7,29 @@
     <title>Exercicio - 01</title>
 </head>
 <body>
+    <h1>Exercicio - 01</h1>
     <!-- 
         Tendo como dados de entrada a altura e o sexo de uma pessoa, construa um algoritmo que
         calcule seu peso ideal, utilizando as seguintes fórmulas:
         ● para homens: (72.7 * h) – 58;
         ● para mulheres: (62.1 * h) – 44.7.
     -->
-
+    
     <form >
-
+        <label for="">Sexo: </label>
+        <input type="radio" name="sexo" id="sexo" value="masculo"> <label>Masculino</label>
+        <input type="radio" name="sexo" id="sexo" value="feminino"> <label>Feminino</label>
+        <br>
+        <br>
+        <label for="">Altura: </label>
+        <input type="number" name="altura" id="altura">
+        <br>
+        <br>
+        <button onclick="imc()">Calcular</button>    
     </form>
+
+    <p>Seu IMC é : <span id="imc"></span></p>
+
+    <script src="js/imc.js"></script>
 </body>
 </html>
