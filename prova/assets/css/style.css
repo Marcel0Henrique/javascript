@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+
+.al-activate {
+    background-color: rgb(100, 33, 163) !important;
+    font-weight: bolder;
+}
+
+.title{
+    text-align: center;
+    font-family: 'Merienda', cursive;
+}
+
+.info{
+    font-weight: bolder;
+    font-family: 'Merienda', cursive;
+    line-height: 35px;
+}
