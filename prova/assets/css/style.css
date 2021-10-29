@@ -1,11 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
 
+body{
+    background-image: url('https://raw.githubusercontent.com/Marcel0Henrique/formulario_contato/master/img/bg.jpg');
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+hr { 
+    border-color: white;
+}
+label{
+    font-weight: bold;
+    color: white;
+}
+
 .al-activate {
     background-color: rgb(100, 33, 163) !important;
     font-weight: bolder;
 }
 
 .title{
+    color: white;
     text-align: center;
     font-family: 'Merienda', cursive;
 }
@@ -18,5 +35,9 @@
 
 .infoPedido{
     font-weight: lighter;
-    color: rgb(100, 33, 163);
+    color: rgb(255, 255, 255);
+}
+
+p{
+    color: white;
 }
