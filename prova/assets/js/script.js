@@ -1,5 +1,7 @@
 var proteina =document.getElementById("inputProteinas");
 var bebida = document.getElementById("inputBebidas");
+var acompanhamento1 = document.getElementById("inputAcompanhamento1");
+var acompanhamento2 = document.getElementById("inputAcompanhamento2");
 var formaPagamento = document.getElementById("inputPagamento");
 var nome = document.getElementById("inputNome");
 var sobrenome = document.getElementById("inputSobrenome");
@@ -42,13 +44,16 @@ function processamento(){
     switch (bebida.value) {
         case "1":
             var beb = 6;
+            var pedidoBebida = "Suco de Laranja";
             break;
         case "2":
             var beb = 6;
+            var pedidoBebida = "Suco de Limão";
             break;
     
         case "3":
             var beb = 6;
+            var pedidoBebida = "Refrigerante de Lata";
             break;
     
         default:
@@ -56,7 +61,7 @@ function processamento(){
     }
 
 
-    var calc = prot + Number(bebida.value);
+    var calc = prot + beb;
     var pagamento = document.getElementById("formaPagamento");
     var valorTotal = document.getElementById("valorTotal");
     var infoclt = document.getElementById("infoCliente");
@@ -64,7 +69,7 @@ function processamento(){
 
     valorTotal.innerHTML =  "R$ " + calc;
     pagamento.innerHTML =  formaPagamento.value;
-
+    pedido.innerHTML = pedidoProteina + ", " + acompanhamento1.value + ", " + acompanhamento2.value + " e " + pedidoBebida;
     infoclt.innerHTML = nome.value + " " + sobrenome.value + ", " + "Rua " + rua.value + ", " + numero.value;
 
 
