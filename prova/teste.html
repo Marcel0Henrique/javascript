@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="Prova02.css">
+    
+    <title>Food World!</title>
+
+  </head>
+
+  <body>
+
+    <h1>Seu Pedido Aqui!</h1>
+
+    <h2 class="container"> Faça Seu Prato </h3>
+
+    <div class="container1">
+
+        <h3 class = "container">Proteinas</h3>
+
+    <p>
+        <ul>
+            <li>Carne de Sol --> R$ 15,00</li>
+            <li>Calabresa --> R$ 13,00</li>
+            <li>Figado Acebolado --> R$ 14,00</li>
+            <li>Bife Acebolado --> R$ 14,00</li>
+            <li>Panqueca de Carne --> R$ 14,00</li>
+        </ul>
+    </p>
+
+    <h3 class="container"> 1º Acompanhamento: </h3>
+
+    <p>
+        <ul>
+            <li>Feijão Preto</li>
+            <li>Feijão Mulatinho</li>
+            <li>Feijão Macassar</li>
+        </ul>
+    </p>
+
+    <h3 class="container">2º Acompanhamento: </h3>
+
+    <p>
+        <ul>
+            <li>Arroz Branco</li>
+            <li>Arroz Integral</li>
+        </ul>
+    </p>
+
+    <h3 class="container">3º Acompanhamento: </h3>
+
+    <p>
+        <ul>
+            <li>Salada Mista</li>
+            <li>Vinagrete</li>
+        </ul>
+    </p>
+
+    <h3 class="container">Bebidas</h3>
+
+    <p>
+        <ul>
+            <li>Suco de Limão --> R$ 6,00</li>
+            <li>Suco de Laranja --> R$ 6,00</li>
+            <li>Refrigerante --> R$ 6,00</li>
+        </ul>
+    </p>
+
+    <h2 class ="container">Informações do Cliente: </h2>
+
+    
+        <label for="nome">Nome: </label>
+        <input type="text" id= "nome" name= "nome" placeholder=" Seu Nome"><br>
+        <label for="sobrenome">Sobrenome: </label>
+        <input type="text" id= "sobrenome" name= "sobrenome" placeholder=" Seu Sobrenome"><br>
+        <label for="rua">Rua: </label>
+        <input type="text" id= "rua" name= "rua" placeholder=" Rua"><br>
+        <label for="numero">Número: </label>
+        <input type="number" id= "numero" name= "numero" placeholder="Celular"><br>
+        <label for="card">Forma de Pagamento: </label>
+        <select name="card" id="card">
+            <option value="debito">Cartão de Débito</option>
+            <option value="credito">Cartão de Crédito</option>
+            <option value="dinheiro">Dinheiro</option>
+        </select>
+    
+
+    <h2 class ="container">Informações do Pedido: </h2>
+
+    
+        <label for="proteina">Proteina: </label>
+        <select name="proteina" id="proteina">
+            <option value="15">Carne de Sol --> R$ 15,00</option>
+            <option value="13">Calabresa --> R$ 13,00</option>
+            <option value="14">Figado Acebolado --> R$ 14,00</option>
+            <option value="14">Bife Acebolado --> R$ 14,00</option>
+            <option value="14">Panqueca de Carne --> R$ 14,00</option>
+        </select>
+    
+        <label for="ac1">1º Acompanhamento: </label>
+        <input type="ac1" id= "ac1" name= "ac1"><br>
+        <label for="ac2">2º Acompanhamento:  </label>
+        <input type="text" id= "ac2" name= "ac2" ><br>
+        <label for="ac3">3º Acompanhamento: </label>
+        <input type="text" id= "ac3" name= "ac3"><br>
+        <label for="bebidas">Bebidas: </label>
+        <select name="bebidas" id="bebidas">
+            <option value="6">Suco de Laranja --> R$ 6,00</option>
+            <option value="6">Suco de Limão --> R$ 6,00</option>
+            <option value="6">Refrigerante --> R$ 6,00</option>
+        </select>
+        <button onclick = "pedido()">Processar Pedido</button>
+    
+
+    <h2 class="container">Informações</h2>
+
+    <p>Valor Total: <span id = "c1"></span> </p>
+   
+    <p>Forma de Pagamento: <span id = "real"></span> </p>
+
+    <p>Pedido: <span id = "c2"></span> </p>
+
+    <p>Informações do Cliente: <span id = "infoclt"></span> </p>
+
+
+    </div>
+
+    <!-- <img class = "food" src="../27-10-2021/Img/food.jpg" alt="Carregando">-->
+
+    <script src="Prova02.js"></script>
+    
+  </body>
+</html>

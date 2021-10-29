@@ -52,7 +52,7 @@
                     <li class="list-group-item">Vinagrete</li>
                 </ul>
 
-                <ul class="list-group mt-4 mb-5">
+                <ul class="list-group mt-4 mb-5 pb-5">
                     <li class="list-group-item active al-activate ">Bebidas</li>
                     <li class="list-group-item">Suco Laranja : R$ 6.00</li>
                     <li class="list-group-item">Suco Limão : R$ 6.00</li>
@@ -78,18 +78,23 @@
 
                     <div class="form-group col-md-6">
                         <label for="inputRua">Rua</label>
-                        <input type="text" class="form-control" id="inputNome" placeholder="Rua">
+                        <input type="text" class="form-control" id="inputRua" placeholder="Rua">
                     </div>
 
                     <div class="form-group col-md-6">
                         <label for="inputNumero">Número</label>
-                        <input type="text" class="form-control" id="inputSobrenome" placeholder="Número">
+                        <input type="text" class="form-control" id="inputNumero" placeholder="Número">
                     </div>
 
-                    <div class="form-group col-md-12 mb-5">
-                        <label for="i">Forma de Pagamento</label>
-                        <input type="text" class="form-control" id="inputPagamento">
-                      </div>
+                    <div class="form-group col-md-12 mb-5 pb-5">
+                      <label for="inputPagamento">Forma de Pagamento</label>
+                      <select id="inputPagamento" class="form-control" required>
+                        <option selected disabled>Escolher...</option>
+                        <option value="Cartão de Crédito">Cartão de Crédito</option>
+                        <option value="Cartão de Debito">Cartão de Debito</option>
+                        <option value="Dinheiro">Dinheiro</option>
+                      </select>
+                    </div>
 
                     </div>
 
@@ -123,9 +128,9 @@
                         <label for="inputAcompanhamento1">Acompanhamento 1</label>
                         <select id="inputAcompanhamento1" class="form-control" required>
                           <option selected disabled>Escolher...</option>
-                          <option value="">Feijão Preto</option>
-                          <option value="">Feijão Mulatinho</option>
-                          <option value="">Feijão Macassa</option>
+                          <option value="Feijão Preto">Feijão Preto</option>
+                          <option value="Feijão Mulatinho">Feijão Mulatinho</option>
+                          <option value="Feijão Macassa">Feijão Macassa</option>
                         </select>
                       </div>
 
@@ -134,8 +139,8 @@
                         <label for="inputAcompanhamento2">Acompanhamento 2</label>
                         <select id="inputAcompanhamento2" class="form-control" >
                           <option selected disabled>Escolher...</option>
-                          <option value="">Arroz Branco</option>
-                          <option value="">Arroz integral</option>
+                          <option value="Arroz Branco">Arroz Branco</option>
+                          <option value="Arroz integral">Arroz integral</option>
                         </select>
                       </div>
 
@@ -145,8 +150,8 @@
                         <label for="inputAcompanhamento2">Acompanhamento 3</label>
                         <select id="inputAcompanhamento2" class="form-control">
                           <option selected disabled>Escolher...</option>
-                          <option value="">Salada Mista</option>
-                          <option value="">Vinagrete</option>
+                          <option value="Salada Mista">Salada Mista</option>
+                          <option value="Vinagrete<">Vinagrete</option>
                         </select>
                       </div>
 
@@ -161,12 +166,13 @@
                         </select>
                       </div>
 
-                      <button onclick="processamento()" class="btn btn-primary col-md-12 mt-3 mb-5">Processar pedido</button>
+                      <button onclick="processamento()" class="btn btn-primary col-md-12 mt-5 mb-5">Processar pedido</button>
                     </div>
                   
 
 
                 <!-- info pedido-->
+                <hr class="mt-4">
                 <h2 class="title">Informações</h2>
                 <hr>
 
