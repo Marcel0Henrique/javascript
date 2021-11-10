@@ -18,9 +18,11 @@ function vazio() {
         alert("Data de nascimento está vazio");
     }else if(sobre.value == ""){
         alert("Sobre você está vazio");
-    }else if(sobre.value == ""){
+    }else if(linkedin.value == ""){
         alert("Linkedin está vazio");
-    }else if(sobre.value == ""){
+    }else if(github.value == ""){
+        alert("GitHub está vazio");
+    }else if(salario.value == ""){
         alert("Pretenção salarial está vazio");
     }
     
