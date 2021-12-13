@@ -39,13 +39,19 @@
                             </select>
                         </div>
                         <div class="form-group col-md-2">
-                            <label for="inputCEP">Quantidade</label>
+                            <label for="inputQuantidade">Quantidade</label>
                             <input type="text" class="form-control" id="inputCEP">
                         </div>
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Adicionar</button>
+                    <button type="button" class="btn btn-primary" onclick="addDep()">Adicionar</button> <button type="button" class="btn btn-primary ml-5" onclick="showGraphic()">Mostrar</button>
                 </form>
+
+                <h3 class="text-center mt-5"></h3>
+
+                <div class="mt-5">
+                    <canvas id="myChart" width="800" height="200"></canvas>
+                </div>
 
             </div>
 
@@ -54,6 +60,8 @@
             </div>
         </div>
     </div>
+
+    <script src="js/grafico.js"></script>
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
