@@ -1,20 +1,20 @@
 
-var depart = document.getElementById("inputDepartamento");
-var valor = document.getElementById('inputQuantidade');
+var departamento = document.getElementById("inputDepartamento");
+var quantidade = document.getElementById('inputQuantidade');
 
 var lista = [];
-var valor_depart = [];
+var valor_departamento = [];
 
 function addDep(){
     
 
-    if(valor.value == ''){
+    if(quantidade.value == ''){
         alert("Campo Nome em branco");
     }else{
-        lista.push(depart.value);
+        lista.push(departamento.value);
 
-        valor_depart.push(valor.value);
-    alert("O departamento " + depart.value + " foi cadastrado com a quantidade de " + Number(valor.value) );
+        valor_departamento.push(quantidade.value);
+    alert("O departamento " + departamento.value + " foi cadastrado com a quantidade de " + Number(quantidade.value) );
     }
 
     
@@ -31,7 +31,7 @@ function showGraphic(){
             labels:lista,
             datasets: [{
                 label: '# of Votes',
-                data: valor_depart,
+                data: valor_departamento,
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
