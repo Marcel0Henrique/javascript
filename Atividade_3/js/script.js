@@ -4,33 +4,33 @@ var n2 = document.getElementById("n2");
 
 
 function gerar() {
-    
+
     const ctx = document.getElementById('myChart').getContext('2d');
-const myChart = new Chart(ctx, {
-    type: 'doughnut',
-    data: {
-        labels: ['Dado 1', 'Dado 2'],
-        datasets: [{
-            label: 'Grafico',
-            data: [n1.valueAsNumber, n2.valueAsNumber],
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgb(255, 205, 86)'
-                
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true
+    const myChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: ['Dado 1', 'Dado 2'],
+            datasets: [{
+                label: 'Grafico',
+                data: [n1.valueAsNumber, n2.valueAsNumber],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgb(255, 205, 86)'
+
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
             }
         }
-    }
-});
+    });
 }
