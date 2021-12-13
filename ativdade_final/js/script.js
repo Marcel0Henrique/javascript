@@ -49,10 +49,10 @@ function showGrap() {
           label: livros_Dep,
           data: livros_Quant,
           backgroundColor: [
-            'rgba(222, 41, 24)',
-            'rgb(69, 98, 222)',
-            'rgb(78, 145, 16)',
-            'rgb(255, 242, 0)'
+            'rgba(222, 41, 24,0.8)',
+            'rgba(69, 98, 222,0.8)',
+            'rgba(78, 145, 16,0.8)',
+            'rgba(255, 242, 0,0.8)'
 
           ],
           borderColor: [
